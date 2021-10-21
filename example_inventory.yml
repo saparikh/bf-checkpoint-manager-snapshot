@@ -1,0 +1,8 @@
+all:
+  children:
+    checkpoint_mgmt:
+      vars:
+        ansible_connection: local
+        device_os: checkpoint_mgmt
+      hosts:
+        dummy01: null
