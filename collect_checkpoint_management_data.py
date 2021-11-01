@@ -190,6 +190,7 @@ def get_request_components_management_solo(api_version: Text) -> List[Dict]:
             # Misc
             {"show-gateways-and-servers": {"details-level": "full"}},
             {"show-objects": {"details-level": "full"}},
+            {"show-wildcards": {"details-level": "full"}},
         ],
         "1.7": [
             # Network Objects
@@ -212,6 +213,7 @@ def get_request_components_management_solo(api_version: Text) -> List[Dict]:
             # Misc
             {"show-gateways-and-servers": {"details-level": "full"}},
             {"show-objects": {"details-level": "full"}},
+            {"show-wildcards": {"details-level": "full"}},
         ],
     }
 
