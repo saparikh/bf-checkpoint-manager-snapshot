@@ -215,6 +215,29 @@ def get_request_components_management_solo(api_version: Text) -> List[Dict]:
             {"show-objects": {"details-level": "full"}},
             {"show-wildcards": {"details-level": "full"}},
         ],
+        "1.8": [
+            # Network Objects
+            {"show-hosts": {"details-level": "full"}},
+            {"show-networks": {"details-level": "full"}},
+            {"show-groups": {"details-level": "full"}},
+            {"show-security-zones": {"details-level": "full"}},
+            # Service & Applications
+            {"show-services-tcp": {"details-level": "full"}},
+            {"show-services-udp": {"details-level": "full"}},
+            {"show-services-icmp": {"details-level": "full"}},
+            {"show-services-sctp": {"details-level": "full"}},
+            {"show-services-other": {"details-level": "full"}},
+            {"show-service-groups": {"details-level": "full"}},
+            {"show-services-dce-rpc": {"details-level": "full"}},
+            {"show-services-rpc": {"details-level": "full"}},
+            {"show-services-gtp": {"details-level": "full"}},
+            {"show-services-citrix-tcp": {"details-level": "full"}},
+            {"show-services-compound-tcp": {"details-level": "full"}},
+            # Misc
+            {"show-gateways-and-servers": {"details-level": "full"}},
+            {"show-objects": {"details-level": "full"}},
+            {"show-wildcards": {"details-level": "full"}},
+        ],
     }
 
     return query[api_version]
